@@ -5,21 +5,17 @@ import logo from '../logo.svg';
 function Courses() {
     return (
         <div className="container">
-           <div className="card mb-3 col-md-8">
-                <div className="row g-0">
-                  <div className="col-md-4">
-                    <img src={logo} className="img-fluid rounded-start" alt="..."/>
-                  </div>
-                  <div className="col-md-4">
-                    <div className="card-body">
-                      <h5 className="card-title">Courses</h5>
-                      <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+          <h1 className="h2">courses</h1>
+          <div className="btn-toolbar mb-2 mb-md-0">
+            <div className="btn-group me-2">
+              <Link to="/addcourses">
+                <button className="w-100 btn btn-primary" type="button" rou>Add Course</button>
+              </Link>
+            </div>
+          </div>
         </div>
+      </div>
     );
 }
 

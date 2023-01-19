@@ -14,6 +14,7 @@ import Batches from './components/Batches';
 import AddStudent from './components/student/AddStudent';
 import AddBatch from './components/batches/AddBatch';
 import SideNavBar from './components/sidenavbar';
+import AddCourses from './components/Courses/AddCourses';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
             <Route exact path='/courses' element={< Courses />}></Route>
             <Route exact path='/batches' element={< Batches />}></Route>
             <Route exact path='/addbatch' element={< AddBatch />}></Route>
+            <Route exact path='/addcourses' element={< AddCourses />}></Route>
           </Routes>
         </div>
       </div>
